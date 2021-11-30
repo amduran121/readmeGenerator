@@ -1,32 +1,40 @@
 //TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
+`;
+}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  return `* [License](*license)\n`;
+}
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  return `## License
+  This project is licensed under the ${license} license.
+  `;
+}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(response) {
   //Put down all of the readme info. Pass in responses from inquirer (user response)
   return `# ${response.title}
+  ${renderLicenseBadge(response.license)}
 ## Description
 ${response.description}
 ## Table of Contents
-If your README is long, add a table of contents to make it easy for users to find what they need.
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
 - [Questions](#questions)
-- [License](#license)
+${renderLicenseLink(response.license)}
 ## Installation
 ${response.installation}
 ## Usage
 ${response.usage}
-    md
-    ![alt text](assets/images/screenshot.png)
 ## Contribution-Guidelines
 ${response.contribution}
 ## Test-Instructions
@@ -35,8 +43,8 @@ ${response.test}
 If you have any questions regarding this project please contact either on GitHub or by Email below.
 GitHub: ${response.github}
 Email: ${response.email}
-## License
-${response.license}
+
+${renderLicenseSection(response.license)}
 ## Features
 If your project has a lot of features, list them here.
 ## How to Contribute

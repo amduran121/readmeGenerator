@@ -1,18 +1,33 @@
-#  
+# awesome Title
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
+a project of awesomeness
 ## Table of Contents
-If your README is long, add a table of contents to make it easy for users to find what they need.
+
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [Questions](#questions)
+* [License](*license)
+
 ## Installation
+be awesome and the installation will be easy.
 ## Usage
-    md
-    ![alt text](assets/images/screenshot.png)
-## Contribution Guidelines
-## Test Instructions
+n/a
+## Contribution-Guidelines
+n/a
+## Test-Instructions
+n/a
+## Questions
+If you have any questions regarding this project please contact either on GitHub or by Email below.
+GitHub: amduran121
+Email: amduran121@gmail.com
+
 ## License
+  This project is licensed under the MIT license.
+  
 ## Features
 If your project has a lot of features, list them here.
 ## How to Contribute
